@@ -16,7 +16,6 @@ class HomeVC: UIViewController,NavBarImageProtocol {
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     
     var isSideBarOpen : Bool = false
-    var ds: DataService = DataService.instance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +28,9 @@ class HomeVC: UIViewController,NavBarImageProtocol {
         tapGesture.numberOfTapsRequired = 1
         self.view.addGestureRecognizer(tapGesture)
         
-        DispatchQueue.global(qos: .utility).async {
+        /*DispatchQueue.global(qos: .utility).async {
             self.ds.loadUniversities()
-        }
+        }*/
         //TODO: Fix The TapGesture Bug
     }
     

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SVProgressHUD
+import FirebaseAuth
 
 class SignUpVC: UIViewController {
     
@@ -16,15 +18,31 @@ class SignUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
+        self.view.addGestureRecognizer(tapGesture)
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func signUpBtnTapped(_ sender: UIButton) {
+        
+        SVProgressHUD.show(withStatus: "Creating")
+        
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (result, error) in
+            if error != nil {
+                SVProgressHUD.showError(withStatus: error?.localizedDescription)
+            } else {
+                SVProgressHUD.dismiss()
+                self.performSegue(withIdentifier: "toHomeVC", sender: self)
+            }
+        }
+        
     }
     
-    @IBAction func signUpBtnTapped(_ sender: UIButton) {
+    @objc func closeKeyboard() {
+        
+        emailTextField.endEditing(true)
+        passwordTextField.endEditing(true)
+        
     }
     
     
