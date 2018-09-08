@@ -22,6 +22,8 @@
 		30966147211334BA00FEA5E9 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30966146211334BA00FEA5E9 /* SideBarView.swift */; };
 		3096614B21139AF500FEA5E9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096614A21139AF500FEA5E9 /* DataService.swift */; };
 		30B398F42100EB24006BFB0C /* polonyadayiz-com-logo (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 30B398F32100EB24006BFB0C /* polonyadayiz-com-logo (1).png */; };
+		30CB08082144751E0099AE07 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CB08072144751E0099AE07 /* SignInVC.swift */; };
+		30CB080A214475390099AE07 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CB0809214475390099AE07 /* SignUpVC.swift */; };
 		30CE79E7211A16DA00E9BE05 /* UniDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE79E6211A16DA00E9BE05 /* UniDetailVC.swift */; };
 		30CE79E9211A174200E9BE05 /* UniDepartmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE79E8211A174200E9BE05 /* UniDepartmentVC.swift */; };
 		30CE79EB211A1AE700E9BE05 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE79EA211A1AE700E9BE05 /* TabBar.swift */; };
@@ -50,6 +52,8 @@
 		30966146211334BA00FEA5E9 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
 		3096614A21139AF500FEA5E9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		30B398F32100EB24006BFB0C /* polonyadayiz-com-logo (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "polonyadayiz-com-logo (1).png"; sourceTree = "<group>"; };
+		30CB08072144751E0099AE07 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		30CB0809214475390099AE07 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		30CE79E6211A16DA00E9BE05 /* UniDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniDetailVC.swift; sourceTree = "<group>"; };
 		30CE79E8211A174200E9BE05 /* UniDepartmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniDepartmentVC.swift; sourceTree = "<group>"; };
 		30CE79EA211A1AE700E9BE05 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				305327D021013675003C74A4 /* UniListVC.swift */,
 				30CE79E8211A174200E9BE05 /* UniDepartmentVC.swift */,
 				30CE79E6211A16DA00E9BE05 /* UniDetailVC.swift */,
+				30CB08072144751E0099AE07 /* SignInVC.swift */,
+				30CB0809214475390099AE07 /* SignUpVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -319,6 +325,8 @@
 				305327D121013675003C74A4 /* UniListVC.swift in Sources */,
 				3096614B21139AF500FEA5E9 /* DataService.swift in Sources */,
 				30CE79E7211A16DA00E9BE05 /* UniDetailVC.swift in Sources */,
+				30CB08082144751E0099AE07 /* SignInVC.swift in Sources */,
+				30CB080A214475390099AE07 /* SignUpVC.swift in Sources */,
 				30CE79EB211A1AE700E9BE05 /* TabBar.swift in Sources */,
 				307786572118E1570017B799 /* UniListCell.swift in Sources */,
 				305327CD210132A8003C74A4 /* DropShadowProtocol.swift in Sources */,
@@ -477,7 +485,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3H9VJDR9FJ;
 				INFOPLIST_FILE = polonyadayiz/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.emirkartal.polonyadayiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -493,7 +504,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3H9VJDR9FJ;
 				INFOPLIST_FILE = polonyadayiz/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.emirkartal.polonyadayiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
