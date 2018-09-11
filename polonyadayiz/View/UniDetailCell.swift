@@ -10,10 +10,16 @@ import UIKit
 
 class UniDetailCell: UITableViewCell {
     @IBOutlet weak var uniDetailLabel: UILabel!
+    @IBOutlet weak var likeBtn: UIButton!
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var selection : Bool = false
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -21,6 +27,38 @@ class UniDetailCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    @IBAction func likeBtnTapped(_ sender: UIButton) {
+        
+        selection = !selection
+        
+        if selection {
+            likeBtn.setBackgroundImage(#imageLiteral(resourceName: "liked.png"), for: .normal)
+            saveDepartment()
+        } else {
+            likeBtn.setBackgroundImage(#imageLiteral(resourceName: "likebtn.png"), for: .normal)
+        }
+        
+        
+    }
+    
+    //MARK: Save Data to CoreData
+    
+    func saveDepartment() {
+        
+        let likedDepartment = LikedDepartment(context: self.context)
+        likedDepartment.departmentName = uniDetailLabel.text
+        likedDepartment.isLiked = true
+        likedDepartment.universityName = "University Name" //TODO: Get University Name Here
+        
+        do {
+            try context.save()
+            print("Success")
+        } catch {
+            print("error when saving data \(error.localizedDescription)")
+        }
+        
+    }
+    
     
    
 

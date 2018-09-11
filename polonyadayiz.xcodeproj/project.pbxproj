@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300BFE432147F9BB0025C4EC /* likebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 300BFE412147F9BB0025C4EC /* likebtn.png */; };
+		300BFE442147F9BB0025C4EC /* liked.png in Resources */ = {isa = PBXBuildFile; fileRef = 300BFE422147F9BB0025C4EC /* liked.png */; };
+		30119F442144843A002785BB /* UniversityDepartmentModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30119F422144843A002785BB /* UniversityDepartmentModel.xcdatamodeld */; };
 		302054FB21036B8A000A09BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 302054FA21036B8A000A09BE /* GoogleService-Info.plist */; };
 		305327CD210132A8003C74A4 /* DropShadowProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305327CC210132A8003C74A4 /* DropShadowProtocol.swift */; };
 		305327CF21013594003C74A4 /* NavBarImageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305327CE21013594003C74A4 /* NavBarImageProtocol.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300BFE412147F9BB0025C4EC /* likebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likebtn.png; sourceTree = "<group>"; };
+		300BFE422147F9BB0025C4EC /* liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liked.png; sourceTree = "<group>"; };
+		30119F432144843A002785BB /* UniversityDepartmentModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UniversityDepartmentModel.xcdatamodel; sourceTree = "<group>"; };
 		302054FA21036B8A000A09BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		305327CC210132A8003C74A4 /* DropShadowProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropShadowProtocol.swift; sourceTree = "<group>"; };
 		305327CE21013594003C74A4 /* NavBarImageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarImageProtocol.swift; sourceTree = "<group>"; };
@@ -126,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				3096614021132AE100FEA5E9 /* menuicon.png */,
+				300BFE412147F9BB0025C4EC /* likebtn.png */,
+				300BFE422147F9BB0025C4EC /* liked.png */,
 				30B398F32100EB24006BFB0C /* polonyadayiz-com-logo (1).png */,
 			);
 			path = Images;
@@ -170,6 +178,7 @@
 			children = (
 				30E0104B20DD17FD00AEFC3A /* UniversityModel.swift */,
 				3096614A21139AF500FEA5E9 /* DataService.swift */,
+				30119F422144843A002785BB /* UniversityDepartmentModel.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -256,6 +265,8 @@
 				302054FB21036B8A000A09BE /* GoogleService-Info.plist in Resources */,
 				30E0103E20DD17C400AEFC3A /* Main.storyboard in Resources */,
 				30B398F42100EB24006BFB0C /* polonyadayiz-com-logo (1).png in Resources */,
+				300BFE442147F9BB0025C4EC /* liked.png in Resources */,
+				300BFE432147F9BB0025C4EC /* likebtn.png in Resources */,
 				3096614121132AE200FEA5E9 /* menuicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +335,7 @@
 				30966147211334BA00FEA5E9 /* SideBarView.swift in Sources */,
 				305327D121013675003C74A4 /* UniListVC.swift in Sources */,
 				3096614B21139AF500FEA5E9 /* DataService.swift in Sources */,
+				30119F442144843A002785BB /* UniversityDepartmentModel.xcdatamodeld in Sources */,
 				30CE79E7211A16DA00E9BE05 /* UniDetailVC.swift in Sources */,
 				30CB08082144751E0099AE07 /* SignInVC.swift in Sources */,
 				30CB080A214475390099AE07 /* SignUpVC.swift in Sources */,
@@ -537,6 +549,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		30119F422144843A002785BB /* UniversityDepartmentModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				30119F432144843A002785BB /* UniversityDepartmentModel.xcdatamodel */,
+			);
+			currentVersion = 30119F432144843A002785BB /* UniversityDepartmentModel.xcdatamodel */;
+			path = UniversityDepartmentModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 30E0102D20DD17C400AEFC3A /* Project object */;
 }

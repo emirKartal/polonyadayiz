@@ -610,15 +610,24 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yji-nX-UZr">
-                                                    <rect key="frame" x="37" y="11" width="300" height="21"/>
+                                                    <rect key="frame" x="22" y="44" width="300" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="1" green="0.37235061390000002" blue="0.37220433180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qh8-XM-jxv">
+                                                    <rect key="frame" x="330" y="11" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button" image="likebtn.png"/>
+                                                    <connections>
+                                                        <action selector="likeBtnTapped:" destination="oyh-LX-7ud" eventType="touchUpInside" id="4AE-qn-gQE"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="likeBtn" destination="qh8-XM-jxv" id="0iR-J9-H1m"/>
                                             <outlet property="uniDetailLabel" destination="Yji-nX-UZr" id="j8C-fV-KZs"/>
                                         </connections>
                                     </tableViewCell>
@@ -817,6 +826,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="likebtn.png" width="512" height="512"/>
         <image name="menuicon.png" width="24" height="24"/>
         <image name="polonyadayiz-com-logo (1).png" width="251" height="74"/>
     </resources>

@@ -28,9 +28,6 @@ class HomeVC: UIViewController,NavBarImageProtocol {
         tapGesture.numberOfTapsRequired = 1
         self.view.addGestureRecognizer(tapGesture)
         
-        /*DispatchQueue.global(qos: .utility).async {
-            self.ds.loadUniversities()
-        }*/
         //TODO: Fix The TapGesture Bug
     }
     
@@ -39,6 +36,8 @@ class HomeVC: UIViewController,NavBarImageProtocol {
         performSegue(withIdentifier: "toUni", sender: self)
         
     }
+    
+    //TODO : Sign Out button should add
     
     @IBAction func sideBarButtonTapped(_ sender: UIBarButtonItem) {
         

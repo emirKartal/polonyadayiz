@@ -19,7 +19,7 @@ class SignInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         ds.loadUniversities()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
