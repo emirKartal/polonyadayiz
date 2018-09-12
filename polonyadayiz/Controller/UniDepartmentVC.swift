@@ -27,6 +27,7 @@ class UniDepartmentVC: UIViewController, NavBarImageProtocol {
         departmentTableView.delegate = self
         departmentTableView.dataSource = self
         
+        
         uniID = UniListVC.selectedUniID
         self.navigationItem.title = UniListVC.selectedUniName
         
@@ -56,6 +57,7 @@ class UniDepartmentVC: UIViewController, NavBarImageProtocol {
             }
         }
     }
+    
 }
 
 extension UniDepartmentVC : UITableViewDelegate, UITableViewDataSource {

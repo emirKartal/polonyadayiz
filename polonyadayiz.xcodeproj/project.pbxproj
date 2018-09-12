@@ -19,7 +19,6 @@
 		307786572118E1570017B799 /* UniListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307786562118E1560017B799 /* UniListCell.swift */; };
 		308305F52125A849007CA8D5 /* UniDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308305F42125A849007CA8D5 /* UniDetailCell.swift */; };
 		308FDD7821000656007652EA /* HomeBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308FDD7721000656007652EA /* HomeBtn.swift */; };
-		308FDD7E21000DB9007652EA /* NavBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308FDD7D21000DB9007652EA /* NavBarVC.swift */; };
 		308FDD8021000E58007652EA /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308FDD7F21000E58007652EA /* NavBar.swift */; };
 		3096614121132AE200FEA5E9 /* menuicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3096614021132AE100FEA5E9 /* menuicon.png */; };
 		30966147211334BA00FEA5E9 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30966146211334BA00FEA5E9 /* SideBarView.swift */; };
@@ -52,7 +51,6 @@
 		307786562118E1560017B799 /* UniListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniListCell.swift; sourceTree = "<group>"; };
 		308305F42125A849007CA8D5 /* UniDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniDetailCell.swift; sourceTree = "<group>"; };
 		308FDD7721000656007652EA /* HomeBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBtn.swift; sourceTree = "<group>"; };
-		308FDD7D21000DB9007652EA /* NavBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarVC.swift; sourceTree = "<group>"; };
 		308FDD7F21000E58007652EA /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		3096614021132AE100FEA5E9 /* menuicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuicon.png; sourceTree = "<group>"; };
 		30966146211334BA00FEA5E9 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				30E0103A20DD17C400AEFC3A /* HomeVC.swift */,
-				308FDD7D21000DB9007652EA /* NavBarVC.swift */,
 				305327D021013675003C74A4 /* UniListVC.swift */,
 				30CE79E8211A174200E9BE05 /* UniDepartmentVC.swift */,
 				30CE79E6211A16DA00E9BE05 /* UniDetailVC.swift */,
@@ -329,7 +326,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				308FDD7E21000DB9007652EA /* NavBarVC.swift in Sources */,
 				305327CF21013594003C74A4 /* NavBarImageProtocol.swift in Sources */,
 				308FDD8021000E58007652EA /* NavBar.swift in Sources */,
 				30966147211334BA00FEA5E9 /* SideBarView.swift in Sources */,

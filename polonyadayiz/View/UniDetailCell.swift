@@ -14,6 +14,7 @@ class UniDetailCell: UITableViewCell {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var selection : Bool = false
+    var likedDepartmentArray : [LikedDepartment] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,6 +37,7 @@ class UniDetailCell: UITableViewCell {
             saveDepartment()
         } else {
             likeBtn.setBackgroundImage(#imageLiteral(resourceName: "likebtn.png"), for: .normal)
+            deleteDepartment()
         }
         
         
@@ -52,10 +54,29 @@ class UniDetailCell: UITableViewCell {
         
         do {
             try context.save()
-            print("Success")
+            likedDepartmentArray.append(likedDepartment)
         } catch {
             print("error when saving data \(error.localizedDescription)")
         }
+        
+        
+        
+    }
+    
+    func deleteDepartment() {
+        
+        let deletedArray = likedDepartmentArray.filter{$0.departmentName == uniDetailLabel.text && $0.universityName == "University Name"}
+        context.delete(deletedArray[0])
+        
+        do {
+            try context.save()
+            print("Deleted")
+            
+        } catch {
+            print("error when saving data \(error.localizedDescription)")
+        }
+        
+        
         
     }
     
