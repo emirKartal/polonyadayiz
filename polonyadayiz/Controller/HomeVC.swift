@@ -31,6 +31,10 @@ class HomeVC: UIViewController,NavBarImageProtocol {
         //TODO: Fix The TapGesture Bug
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        closeSideBar()
+    }
+    
     @IBAction func uniSearchBtnTapped(_ sender: UIButton) {
         
         performSegue(withIdentifier: "toUni", sender: self)
@@ -38,6 +42,14 @@ class HomeVC: UIViewController,NavBarImageProtocol {
     }
     
     //TODO : Sign Out button should add
+    @IBAction func signOutTapped(_ sender: UIButton) {
+    }
+    
+    @IBAction func myFavouritesBtnTapped(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "toMyFavouritesVC", sender: self)
+        
+    }
     
     @IBAction func sideBarButtonTapped(_ sender: UIBarButtonItem) {
         

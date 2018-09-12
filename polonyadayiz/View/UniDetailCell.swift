@@ -50,7 +50,7 @@ class UniDetailCell: UITableViewCell {
         let likedDepartment = LikedDepartment(context: self.context)
         likedDepartment.departmentName = uniDetailLabel.text
         likedDepartment.isLiked = true
-        likedDepartment.universityName = "University Name" //TODO: Get University Name Here
+        likedDepartment.universityName = UniListVC.selectedUniName
         
         do {
             try context.save()
@@ -65,12 +65,11 @@ class UniDetailCell: UITableViewCell {
     
     func deleteDepartment() {
         
-        let deletedArray = likedDepartmentArray.filter{$0.departmentName == uniDetailLabel.text && $0.universityName == "University Name"}
+        let deletedArray = likedDepartmentArray.filter{$0.departmentName == uniDetailLabel.text && $0.universityName == UniListVC.selectedUniName}
         context.delete(deletedArray[0])
         
         do {
             try context.save()
-            print("Deleted")
             
         } catch {
             print("error when saving data \(error.localizedDescription)")

@@ -17,11 +17,7 @@ class UniDetailVC: UIViewController, NavBarImageProtocol {
         addNavBarImage()
         
     }
-    override func viewWillAppear(_ animated: Bool) {
-        
-        navigationController?.tabBarItem.title = UniListVC.selectedUniName
-        print(UniListVC.selectedUniName)
-    }
+
 
  
 

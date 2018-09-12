@@ -24,6 +24,7 @@
 		30966147211334BA00FEA5E9 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30966146211334BA00FEA5E9 /* SideBarView.swift */; };
 		3096614B21139AF500FEA5E9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096614A21139AF500FEA5E9 /* DataService.swift */; };
 		30B398F42100EB24006BFB0C /* polonyadayiz-com-logo (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 30B398F32100EB24006BFB0C /* polonyadayiz-com-logo (1).png */; };
+		30C12A9E2149B0C8001B769E /* MyFavouritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C12A9D2149B0C8001B769E /* MyFavouritesVC.swift */; };
 		30CB08082144751E0099AE07 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CB08072144751E0099AE07 /* SignInVC.swift */; };
 		30CB080A214475390099AE07 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CB0809214475390099AE07 /* SignUpVC.swift */; };
 		30CE79E7211A16DA00E9BE05 /* UniDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE79E6211A16DA00E9BE05 /* UniDetailVC.swift */; };
@@ -56,6 +57,7 @@
 		30966146211334BA00FEA5E9 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
 		3096614A21139AF500FEA5E9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		30B398F32100EB24006BFB0C /* polonyadayiz-com-logo (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "polonyadayiz-com-logo (1).png"; sourceTree = "<group>"; };
+		30C12A9D2149B0C8001B769E /* MyFavouritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavouritesVC.swift; sourceTree = "<group>"; };
 		30CB08072144751E0099AE07 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		30CB0809214475390099AE07 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		30CE79E6211A16DA00E9BE05 /* UniDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniDetailVC.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				30CE79E6211A16DA00E9BE05 /* UniDetailVC.swift */,
 				30CB08072144751E0099AE07 /* SignInVC.swift */,
 				30CB0809214475390099AE07 /* SignUpVC.swift */,
+				30C12A9D2149B0C8001B769E /* MyFavouritesVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				305D0DE32114BDCA009D975F /* ButtonBorderProtocol.swift in Sources */,
 				30E0103B20DD17C400AEFC3A /* HomeVC.swift in Sources */,
 				305D0DE52114BEC8009D975F /* FilterBtn.swift in Sources */,
+				30C12A9E2149B0C8001B769E /* MyFavouritesVC.swift in Sources */,
 				30E0104C20DD17FD00AEFC3A /* UniversityModel.swift in Sources */,
 				30E0103920DD17C400AEFC3A /* AppDelegate.swift in Sources */,
 				308FDD7821000656007652EA /* HomeBtn.swift in Sources */,
