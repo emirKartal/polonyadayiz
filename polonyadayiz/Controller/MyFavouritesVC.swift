@@ -52,13 +52,16 @@ extension MyFavouritesVC : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "favouriteCell", for: indexPath)
         
-        cell.textLabel?.text = favouriteDepartmentArray[indexPath.row].departmentName
-        cell.detailTextLabel?.text = favouriteDepartmentArray[indexPath.row].universityName
+        let cell = tableView.dequeueReusableCell(withIdentifier: "favouriteCell", for: indexPath) as! FavouriteCell
+        let item = favouriteDepartmentArray[indexPath.row]
+        cell.configureFavouriteCell(university: item.universityName!, department: item.departmentName!)
         
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
     
 }
