@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class UniDetailCell: UITableViewCell {
     @IBOutlet weak var uniDetailLabel: UILabel!
@@ -15,6 +16,7 @@ class UniDetailCell: UITableViewCell {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var selection : Bool = false
     var likedDepartmentArray : [LikedDepartment] = []
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,19 +30,23 @@ class UniDetailCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
     @IBAction func likeBtnTapped(_ sender: UIButton) {
         
         selection = !selection
         
+        showImageOfLikeBtn()
+        
+        selection ? saveDepartment() : deleteDepartment()
+        
+    }
+    
+    func showImageOfLikeBtn() {
         if selection {
             likeBtn.setBackgroundImage(#imageLiteral(resourceName: "liked.png"), for: .normal)
-            saveDepartment()
         } else {
             likeBtn.setBackgroundImage(#imageLiteral(resourceName: "likebtn.png"), for: .normal)
-            deleteDepartment()
         }
-        
-        
     }
     
     //MARK: Save Data to CoreData
@@ -59,8 +65,6 @@ class UniDetailCell: UITableViewCell {
             print("error when saving data \(error.localizedDescription)")
         }
         
-        
-        
     }
     
     func deleteDepartment() {
@@ -75,11 +79,26 @@ class UniDetailCell: UITableViewCell {
             print("error when saving data \(error.localizedDescription)")
         }
         
-        
-        
     }
     
-    
-   
+    func checkData() {
+        
+        let request : NSFetchRequest<LikedDepartment> = LikedDepartment.fetchRequest()
+        do {
+            likedDepartmentArray = try context.fetch(request)
+            
+            selection = likedDepartmentArray.contains { (item) -> Bool in
+                if item.departmentName == uniDetailLabel.text && item.universityName == UniListVC.selectedUniName {
+                    return true
+                }else {
+                    return false
+                }
+            }
+            
+        } catch {
+            print("error \(error.localizedDescription)")
+        }
+        
+    }
 
 }

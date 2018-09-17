@@ -128,6 +128,8 @@ extension UniDepartmentVC : UITableViewDelegate, UITableViewDataSource {
         default:
             break
         }
+        cell.checkData()
+        cell.showImageOfLikeBtn()
         
         return cell
     }

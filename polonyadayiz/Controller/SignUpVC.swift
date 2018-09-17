@@ -42,7 +42,7 @@ class SignUpVC: UIViewController {
         
         emailTextField.endEditing(true)
         passwordTextField.endEditing(true)
-        
+    
     }
     
     
