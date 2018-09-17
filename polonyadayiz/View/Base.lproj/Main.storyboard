@@ -175,19 +175,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2e5-og-Gx1">
-                                                    <rect key="frame" x="330" y="24" width="30" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button" image="liked.png"/>
-                                                    <connections>
-                                                        <action selector="LikeBtnTapped:" destination="eBq-LE-VUj" eventType="touchUpInside" id="peQ-sB-XB6"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="departmentLbl" destination="NMZ-M5-gH2" id="9vD-Ph-NmU"/>
-                                            <outlet property="likeBtn" destination="2e5-og-Gx1" id="BEZ-mE-SIl"/>
                                             <outlet property="universityLbl" destination="aLU-lD-Tee" id="bi9-rF-WR2"/>
                                         </connections>
                                     </tableViewCell>
@@ -908,7 +899,6 @@
     </scenes>
     <resources>
         <image name="likebtn.png" width="512" height="512"/>
-        <image name="liked.png" width="512" height="512"/>
         <image name="menuicon.png" width="24" height="24"/>
         <image name="polonyadayiz-com-logo (1).png" width="251" height="74"/>
     </resources>

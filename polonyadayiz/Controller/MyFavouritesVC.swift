@@ -44,7 +44,7 @@ class MyFavouritesVC: UIViewController, NavBarImageProtocol {
 
 }
 
-//MARK: Tableview delegate and data source methods
+    //MARK: Tableview delegate and data source methods
 
 extension MyFavouritesVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,6 +62,23 @@ extension MyFavouritesVC : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            context.delete(favouriteDepartmentArray[indexPath.row])
+            
+            favouriteDepartmentArray.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .bottom)
+            
+            do {
+                try context.save()
+                
+            } catch {
+                print("error when removing data \(error.localizedDescription)")
+            }
+        }
     }
     
 }

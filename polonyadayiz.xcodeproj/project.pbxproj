@@ -114,9 +114,9 @@
 				305327D021013675003C74A4 /* UniListVC.swift */,
 				30CE79E8211A174200E9BE05 /* UniDepartmentVC.swift */,
 				30CE79E6211A16DA00E9BE05 /* UniDetailVC.swift */,
+				30C12A9D2149B0C8001B769E /* MyFavouritesVC.swift */,
 				30CB08072144751E0099AE07 /* SignInVC.swift */,
 				30CB0809214475390099AE07 /* SignUpVC.swift */,
-				30C12A9D2149B0C8001B769E /* MyFavouritesVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

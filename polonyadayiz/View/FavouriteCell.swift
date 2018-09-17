@@ -10,14 +10,14 @@ import UIKit
 
 class FavouriteCell: UITableViewCell {
 
-    @IBOutlet weak var likeBtn: UIButton!
     @IBOutlet weak var universityLbl: UILabel!
     @IBOutlet weak var departmentLbl: UILabel!
     
+    var isLiked : Bool = true
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -25,15 +25,12 @@ class FavouriteCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    @IBAction func LikeBtnTapped(_ sender: UIButton) {
-        
-    }
+    
     func configureFavouriteCell(university uniName: String , department depName: String ) {
         
         universityLbl.text = uniName
         departmentLbl.text = depName
         
     }
-    
     
 }
