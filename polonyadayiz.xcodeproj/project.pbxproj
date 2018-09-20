@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		300BFE432147F9BB0025C4EC /* likebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 300BFE412147F9BB0025C4EC /* likebtn.png */; };
-		300BFE442147F9BB0025C4EC /* liked.png in Resources */ = {isa = PBXBuildFile; fileRef = 300BFE422147F9BB0025C4EC /* liked.png */; };
 		30119F442144843A002785BB /* UniversityDepartmentModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30119F422144843A002785BB /* UniversityDepartmentModel.xcdatamodeld */; };
 		302054FB21036B8A000A09BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 302054FA21036B8A000A09BE /* GoogleService-Info.plist */; };
 		302A58B2214AEC64005885C9 /* FavouriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302A58B1214AEC64005885C9 /* FavouriteCell.swift */; };
@@ -24,6 +22,8 @@
 		3096614121132AE200FEA5E9 /* menuicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3096614021132AE100FEA5E9 /* menuicon.png */; };
 		30966147211334BA00FEA5E9 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30966146211334BA00FEA5E9 /* SideBarView.swift */; };
 		3096614B21139AF500FEA5E9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096614A21139AF500FEA5E9 /* DataService.swift */; };
+		30AC71082153EEF3005C42B7 /* liked.png in Resources */ = {isa = PBXBuildFile; fileRef = 30AC71062153EEF2005C42B7 /* liked.png */; };
+		30AC71092153EEF3005C42B7 /* likebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 30AC71072153EEF3005C42B7 /* likebtn.png */; };
 		30B398F42100EB24006BFB0C /* polonyadayiz-com-logo (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 30B398F32100EB24006BFB0C /* polonyadayiz-com-logo (1).png */; };
 		30C12A9E2149B0C8001B769E /* MyFavouritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C12A9D2149B0C8001B769E /* MyFavouritesVC.swift */; };
 		30CB08082144751E0099AE07 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CB08072144751E0099AE07 /* SignInVC.swift */; };
@@ -41,8 +41,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		300BFE412147F9BB0025C4EC /* likebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likebtn.png; sourceTree = "<group>"; };
-		300BFE422147F9BB0025C4EC /* liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liked.png; sourceTree = "<group>"; };
 		30119F432144843A002785BB /* UniversityDepartmentModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UniversityDepartmentModel.xcdatamodel; sourceTree = "<group>"; };
 		302054FA21036B8A000A09BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		302A58B1214AEC64005885C9 /* FavouriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCell.swift; sourceTree = "<group>"; };
@@ -58,6 +56,8 @@
 		3096614021132AE100FEA5E9 /* menuicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuicon.png; sourceTree = "<group>"; };
 		30966146211334BA00FEA5E9 /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
 		3096614A21139AF500FEA5E9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		30AC71062153EEF2005C42B7 /* liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liked.png; sourceTree = "<group>"; };
+		30AC71072153EEF3005C42B7 /* likebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likebtn.png; sourceTree = "<group>"; };
 		30B398F32100EB24006BFB0C /* polonyadayiz-com-logo (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "polonyadayiz-com-logo (1).png"; sourceTree = "<group>"; };
 		30C12A9D2149B0C8001B769E /* MyFavouritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavouritesVC.swift; sourceTree = "<group>"; };
 		30CB08072144751E0099AE07 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -135,9 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				3096614021132AE100FEA5E9 /* menuicon.png */,
-				300BFE412147F9BB0025C4EC /* likebtn.png */,
-				300BFE422147F9BB0025C4EC /* liked.png */,
 				30B398F32100EB24006BFB0C /* polonyadayiz-com-logo (1).png */,
+				30AC71072153EEF3005C42B7 /* likebtn.png */,
+				30AC71062153EEF2005C42B7 /* liked.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -237,6 +237,7 @@
 				TargetAttributes = {
 					30E0103420DD17C400AEFC3A = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -265,12 +266,12 @@
 			files = (
 				30E0104320DD17C600AEFC3A /* LaunchScreen.storyboard in Resources */,
 				30E0104020DD17C600AEFC3A /* Assets.xcassets in Resources */,
+				30AC71082153EEF3005C42B7 /* liked.png in Resources */,
 				302054FB21036B8A000A09BE /* GoogleService-Info.plist in Resources */,
 				30E0103E20DD17C400AEFC3A /* Main.storyboard in Resources */,
 				30B398F42100EB24006BFB0C /* polonyadayiz-com-logo (1).png in Resources */,
-				300BFE442147F9BB0025C4EC /* liked.png in Resources */,
-				300BFE432147F9BB0025C4EC /* likebtn.png in Resources */,
 				3096614121132AE200FEA5E9 /* menuicon.png in Resources */,
+				30AC71092153EEF3005C42B7 /* likebtn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,7 +508,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.emirkartal.polonyadayiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -526,7 +527,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.emirkartal.polonyadayiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

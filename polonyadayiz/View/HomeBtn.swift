@@ -25,7 +25,7 @@ class HomeBtn: UIButton, DropShadowProtocol {
         layer.cornerRadius = 12
         
         layer.backgroundColor = UIColor(red: 200.0 / 255.0, green: 38.0 / 255.0, blue: 42.0 / 255.0, alpha: 1.0).cgColor
-        setTitleColor(UIColor.white, for: UIControlState.normal)
+        setTitleColor(UIColor.white, for: UIControl.State.normal)
         
     }
     
