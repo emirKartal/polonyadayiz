@@ -15,13 +15,12 @@ class SignInVC: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    var ds: DataService = DataService.instance
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
-        ds.loadUniversities()
         
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
         self.view.addGestureRecognizer(tapGesture)
         

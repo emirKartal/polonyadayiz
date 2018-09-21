@@ -14,7 +14,7 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var ds: DataService = DataService.instance
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = UIColor(red: 200.0 / 255.0, green: 38.0 / 255.0, blue: 42.0 / 255.0, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor.white
         UITabBar.appearance().tintColor = UIColor(red: 200.0 / 255.0, green: 38.0 / 255.0, blue: 42.0 / 255.0, alpha: 1.0)
+        ds.loadUniversities()
         
         if Auth.auth().currentUser == nil {
             
