@@ -24,6 +24,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.white
         UITabBar.appearance().tintColor = UIColor(red: 200.0 / 255.0, green: 38.0 / 255.0, blue: 42.0 / 255.0, alpha: 1.0)
         
+        if Auth.auth().currentUser == nil {
+            
+            var initialViewController: UIViewController?
+            let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            initialViewController = mainStoryboard.instantiateViewController(withIdentifier: "Login")
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+            
+        }
+        
         
         return true
     }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HomeVC: UIViewController,NavBarImageProtocol {
     
@@ -41,8 +42,22 @@ class HomeVC: UIViewController,NavBarImageProtocol {
         
     }
     
-    //TODO : Sign Out button should add
+    
     @IBAction func signOutTapped(_ sender: UIButton) {
+        
+        do {
+            try Auth.auth().signOut()
+            
+            let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "Login") as! SignInVC
+            let appDel:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDel.window?.rootViewController = loginVC
+            self.dismiss(animated: true, completion: nil)
+            
+        }catch {
+            print("error")
+        }
+        
+        
     }
     
     @IBAction func myFavouritesBtnTapped(_ sender: UIButton) {
