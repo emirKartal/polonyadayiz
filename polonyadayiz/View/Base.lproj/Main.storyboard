@@ -19,20 +19,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itL-Fn-fp3" customClass="HomeBtn" customModule="polonyadayiz" customModuleProvider="target">
-                                <rect key="frame" x="16" y="40" width="343" height="150"/>
+                                <rect key="frame" x="37" y="50" width="300" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="Cxe-uX-Bl3"/>
+                                    <constraint firstAttribute="height" constant="60" id="gbL-MH-XdN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Search Poland Universities"/>
                                 <connections>
                                     <action selector="uniSearchBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cFL-5M-ye6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYX-l3-8NQ" customClass="HomeBtn" customModule="polonyadayiz" customModuleProvider="target">
-                                <rect key="frame" x="16" y="210" width="343" height="100"/>
+                                <rect key="frame" x="37" y="150" width="300" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="sWC-kt-vtM"/>
+                                    <constraint firstAttribute="height" constant="60" id="dLb-qz-yON"/>
                                 </constraints>
                                 <state key="normal" title="Top Universities in Poland"/>
                             </button>
@@ -108,14 +108,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="ZYX-l3-8NQ" firstAttribute="top" secondItem="itL-Fn-fp3" secondAttribute="bottom" constant="20" id="Mg6-3V-I2G"/>
-                            <constraint firstItem="itL-Fn-fp3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="TeA-qr-o6C"/>
-                            <constraint firstItem="ZYX-l3-8NQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Z9t-Zc-5Ck"/>
+                            <constraint firstItem="ZYX-l3-8NQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="15s-VF-6hT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="itL-Fn-fp3" secondAttribute="trailing" constant="38" id="20b-MC-zpa"/>
+                            <constraint firstItem="ZYX-l3-8NQ" firstAttribute="top" secondItem="itL-Fn-fp3" secondAttribute="bottom" constant="40" id="HEd-gI-AZ1"/>
+                            <constraint firstItem="itL-Fn-fp3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="OFk-b6-zHs"/>
+                            <constraint firstItem="itL-Fn-fp3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="PFW-3N-g8H"/>
                             <constraint firstItem="zOa-qu-TWJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-200" id="cAq-uW-jKC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="itL-Fn-fp3" secondAttribute="trailing" constant="16" id="ib5-ZS-Yxd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZYX-l3-8NQ" secondAttribute="trailing" constant="16" id="j2n-YE-w6T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZYX-l3-8NQ" secondAttribute="trailing" constant="38" id="g1W-Dx-zUk"/>
                             <constraint firstItem="zOa-qu-TWJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nTv-Ty-z4l"/>
-                            <constraint firstItem="itL-Fn-fp3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uYK-B0-BVK"/>
                             <constraint firstItem="zOa-qu-TWJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wNp-j8-oaf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -166,13 +166,13 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLU-lD-Tee">
                                                     <rect key="frame" x="15" y="11" width="345" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="1" green="0.37235061390000002" blue="0.37220433180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMZ-M5-gH2">
                                                     <rect key="frame" x="15" y="48" width="345" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="1" green="0.37235061390000002" blue="0.37220433180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
